@@ -1,0 +1,224 @@
+/* בסיס */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    direction: rtl;
+    text-align: right;
+}
+
+.main-header {
+    background: linear-gradient(to right, #0077cc, #005fa3);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.main-nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* תמונה עם טקסט */
+.main-image-section {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-overlay {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    max-width: 90%;
+}
+
+.overlay-text h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* פוטר */
+.footer {
+    background: #0077cc;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.about-club {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 3rem;
+    max-width: 100%;
+}
+
+.about-club .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.about-club .text {
+    flex: 1;
+    text-align: right;
+    max-width: 50%;
+}
+
+.about-club .text h2 {
+    font-size: 2.5rem;
+    position: relative;
+    right: 30%;
+    color: #0077cc;
+}
+
+.about-club .text p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-club .image {
+    flex: 1;
+    max-width: 80%;
+}
+
+.about-club .image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    justify-content: left;
+}
+
+
+/* רספונסיביות */
+@media (max-width: 768px) {
+    .overlay-text h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-text h2 {
+        font-size: 1.5rem;
+    }
+}
+/* רספונסיביות */
+@media (max-width: 768px) {
+    /* כותרת עליונה */
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* תמונה עם טקסט */
+    .overlay-text h2 {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    /* אודות המועדון */
+    .about-club {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .about-club .text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-club .image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* כותרת עליונה */
+    .main-header .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* כפתורי ניווט */
+    .main-nav a {
+        font-size: 1rem;
+    }
+
+    /* תמונה עם טקסט */
+    .overlay-text h2 {
+        font-size: 1.5rem;
+    }
+
+    /* אודות המועדון */
+    .about-club {
+        gap: 1.5rem;
+    }
+
+    .about-club .text h2 {
+        font-size: 1.8rem;
+    }
+    .about-club .image img {
+        width: 50%; /* חצי מרוחב הדף */
+        height: auto; /* שמירה על פרופורציות התמונה */
+        object-fit: cover; /* מילוי שטח התמונה */
+    }
+
+}
