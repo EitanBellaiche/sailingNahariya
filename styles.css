@@ -173,7 +173,6 @@ body {
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
-        padding: 2rem;
     }
 
     .about-club .text {
@@ -194,6 +193,13 @@ body {
         width: 100%; /* התמונה תתפוס את כל הרוחב */
         height: auto; /* שומר על יחס התמונה */
         border-radius: 10px;
+    }
+    .about-club .text p {
+        font-size: 1.5rem; /* התאמת גודל טקסט למסכים קטנים */
+        line-height: 1.5; /* שיפור ריווח בין השורות */
+        width: 100%; /* יתפרס על כל רוחב הדף */
+        text-align: justify; /* יישור לשני הצדדים */
+        max-width: 95%;
     }
 }
 
@@ -225,6 +231,13 @@ body {
     .about-club .image img {
         width: 90%; /* מעט רווח מהקצוות */
         margin: 0 auto; /* מרכז את התמונה */
+    }
+    .about-club .text p {
+        width: 100%;
+        padding: 0.5rem; /* שוליים פנימיים קטנים */
+        margin: 0;
+        text-align: justify;
+        font-size: 1.2rem; /* גודל טקסט קטן יותר */
     }
 
 }
