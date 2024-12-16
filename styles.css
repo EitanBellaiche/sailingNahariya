@@ -180,7 +180,7 @@ body {
         order: 1; /* הטקסט יופיע ראשון */
         width: 100%;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
     .about-club .image {
         order: 2; /* התמונה תופיע אחרי הטקסט */
@@ -221,7 +221,6 @@ body {
 
     .about-club .text h2 {
         font-size: 1.8rem;
-        margin-bottom: 0.5rem;
     }
     .about-club .image img {
         width: 90%; /* מעט רווח מהקצוות */
