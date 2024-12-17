@@ -397,20 +397,25 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* עיצוב הטקסט */
-.activities-text {
-    flex: 1;
-    max-width: 50%;
-    text-align: right;
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.8;
+.activities-content {
+    display: flex; /* מציג את האלמנטים בשורה */
+    justify-content: space-between; /* רווח שווה בין הטקסט לתמונה */
+    align-items: center; /* ממרכז את האלמנטים אנכית */
+    gap: 2rem; /* מרווח ביניהם */
+    max-width: 1200px; /* רוחב מקסימלי */
+    margin: 0 auto; /* מרכז את התוכן במסך */
 }
 
-/* עיצוב התמונה */
+.activities-text {
+    flex: 1; /* הטקסט יתפוס חצי מהרוחב */
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
 .activities-image {
-    flex: 1;
-    max-width: 50%;
+    flex: 1; /* התמונה תתפוס חצי מהרוחב */
     text-align: center;
 }
 
@@ -423,7 +428,7 @@ body {
 }
 
 .activities-image img:hover {
-    transform: scale(1.05); /* אפקט קליל בהובר */
+    transform: scale(1.05);
 }
 
 /* רספונסיביות למכשירים קטנים */
