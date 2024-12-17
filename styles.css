@@ -544,4 +544,23 @@ body {
     background-color: #005fa3;
     transform: scale(1.1);
 }
+.register-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077cc; /* צבע רקע */
+    color: #fff; /* צבע טקסט */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; /* פינות מעוגלות */
+    transition: all 0.3s ease; /* אנימציה רכה */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* צל קל */
+}
+
+.register-link:hover {
+    background-color: #005fa3; /* צבע רקע בהובר */
+    color: #ffcc00; /* שינוי צבע הטקסט בהובר */
+    transform: scale(1.1); /* הגדלה קלה */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
