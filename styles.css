@@ -100,45 +100,56 @@ body {
     max-width: 100%;
 }
 
-.about-club .content {
+.about-club {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.about-club h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 3rem;
+    margin-bottom: 30px;
 }
 
-.about-club .text {
-    flex: 1;
+.about-text {
+    width: 100%;
+    max-width: 800px;
     text-align: right;
-    max-width: 50%;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.about-club .text h2 {
-    font-size: 2.5rem;
-    color: #0077cc;
-    text-align: center; /* ממקם את הטקסט במרכז */
-    margin: 0 auto 1rem; /* מרכז את הכותרת ומוסיף מרווח תחתון */
-    line-height: 1.2; /* משפר את הריווח בין השורות */
+.about-text .sub-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
+
+.about-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 .about-club .text p {
     font-size: 1.8rem;
     line-height: 1.6;
     color: #333;
-}
-
-.about-club .image {
-    flex: 1;
-    max-width: 80%;
-}
-
-.about-club .image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    position: relative;
-    justify-content: left;
 }
 
 @media (max-width: 480px) {
@@ -223,6 +234,7 @@ body {
     /* אודות המועדון */
     .about-club {
         padding: 1.5rem; 
+        
     }
 
     .about-club .text h2 {
