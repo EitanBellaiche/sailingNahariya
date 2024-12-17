@@ -563,4 +563,98 @@ body {
     transform: scale(1.1); /* הגדלה קלה */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+/* הישגים משמעותיים */
+.achievements-section {
+    padding: 3rem 1.5rem;
+    background: linear-gradient(135deg, #f4f6f8, #e6e9ed); /* רקע דק ומודרני */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 3rem auto;
+    max-width: 1000px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.achievements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.achievement-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    max-width: 300px;
+    width: 100%;
+    text-align: right;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-item .icon {
+    font-size: 2rem;
+    color: #ffcc00; /* צבע זהב לאייקון */
+    margin-left: 0.75rem;
+}
+
+.achievement-item p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .achievements-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* כפתור חזרה */
+/* מיקום כפתור החזרה */
+.info-section {
+    position: relative; /* כדי שהכפתור ימוקם ביחס לסקשן */
+}
+
+.back-button {
+    position: absolute; /* מיקום מוחלט בתוך ה-info-section */
+    top: 10px; /* מרחק מהחלק העליון */
+    right: 10px; /* מרחק מצד ימין */
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: white; /* צבע רקע */
+    color: black; /* צבע טקסט */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px; /* פינות מעוגלות */
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #005fa3; /* צבע כהה יותר בהובר */
+}
+
 
